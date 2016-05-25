@@ -6,10 +6,29 @@ using System.Threading.Tasks;
 
 namespace COMP123_S2016_Lesson3
 {
+    /**
+     * This class is the "driver" class for our Program
+     * 
+     * @class Program
+     */
     public class Program
     {
+        /**
+         * the main method for the driver class Program
+         * 
+         * @method Main
+         * @param {string[]} args
+         */
         public static void Main(string[] args)
         {
+            // create a new instance of the Person class
+            Person person = new Person("Kevin");
+
+            // set a value in the Name property of the Person class
+            //person.Name = "Kevin";
+
+            // get the Name value and print to console
+            Console.WriteLine(person.Name);
         }
     }
 }
