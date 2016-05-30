@@ -22,13 +22,31 @@ namespace COMP123_S2016_Lesson3
         public static void Main(string[] args)
         {
             // create a new instance of the Person class
-            Person person = new Person("Kevin");
+            Person tanya = new Person();
+            tanya.Name = "Tanya";
+            tanya.Age = 28;
+            tanya.SaysHello();
+            tanya.ShowAge();
 
-            // set a value in the Name property of the Person class
-            //person.Name = "Kevin";
+            Console.WriteLine();
 
-            // get the Name value and print to console
-            Console.WriteLine(person.Name);
+            Person kevin = new Person("Kevin");
+            kevin.Age = 23;
+            kevin.SaysHello();
+            kevin.ShowAge();
+
+            Console.WriteLine();
+
+            Person mark = new Person(30);
+            mark.Name = "Mark";
+            mark.SaysHello();
+            mark.ShowAge();
+
+            Console.WriteLine();
+
+            Person mary = new Person("Mary", 23);
+            mary.SaysHello();
+            mary.ShowAge();
         }
     }
 }
